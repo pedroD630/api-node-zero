@@ -1,0 +1,30 @@
+POST http://localhost:3333/teste
+Content-Type: application/json
+
+{
+    "nome": "silva lindo 123",
+    "idade": 78,
+    "saldo": 1130.56
+}
+
+###
+
+GET http://localhost:3333/teste
+
+###
+
+GET http://localhost:3333/teste?search=silva
+
+###
+
+PUT http://localhost:3333/teste/006a5d7d-0323-4718-a84e-38668aec5672
+Content-Type: application/json
+
+{
+    "nome": "Cristiano Ronaldo",
+    "idade": 39,
+    "saldo": 10000
+}
+
+###
+DELETE http://localhost:3333/teste/df082abd-bcdc-4fe4-8b11-1b625be7c4ca
